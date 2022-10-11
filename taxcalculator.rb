@@ -20,13 +20,13 @@ class TaxCalculator
     fifteen_percent = ((15.0/100.0)*actual_price)
   
     def self.essential 
-      if @@input_string.include? "chocolate" 
+      if @@input_string.include? "chocolate"
         return true
       elsif @@input_string.include? "book"
         return true
       elsif @@input_string.include? "chocolates"
         return true
-      elsif @@input_string.include? "pills" 
+      elsif @@input_string.include? "pills"
         return true
       else
         return false
@@ -34,7 +34,7 @@ class TaxCalculator
     end
     
     def self.imported 
-      if @@input_string.include? "imported" 
+      if @@input_string.include? "imported"
         return true
       else
         return false
@@ -63,6 +63,5 @@ class TaxCalculator
       puts "Total: #{@total.round(2)}"      
     end
   end
-
 end
 

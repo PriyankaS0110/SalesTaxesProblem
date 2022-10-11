@@ -18,3 +18,6 @@ File.open("bill.txt").readlines.each do |line|
   end
   
 TaxCalculator.final_output
+
+File.truncate("bill.txt" , 0)
+
